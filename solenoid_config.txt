@@ -1,0 +1,36 @@
+
+#[solenoidX]
+#name=<Zone name e.g Zone1>
+#description=<description>
+#pin=<output pin on PiFace>
+#master=<station master solenoid>
+
+
+[solenoid1]
+name=Master1
+description=Station 1 Master Solenoid
+pin=7
+master=None
+
+[solenoid2]
+name=Zone1
+description=Front Garden
+pin=6
+master=solenoid1
+
+[solenoid3]
+name=Zone2
+description=Lawn
+pin=5
+master=solenoid1
+
+[solenoid4]
+name=Zone3
+description=Back Lawn
+pin=4
+
+[solenoid5]
+name=Zone4
+description=Buzzer
+pin=3
+
